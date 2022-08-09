@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="お問い合わせ">
+    <meta name="keyword" content="お問い合わせ,contact">
+    <meta name="robots" content="noindex,nofollow">
+    <!--<meta name="viewport" content="width=device-width,initial-scale=1">-->
+    <title>contact | ドライフラワー/プリザーブドフラワー専門店　lab</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/favicon.png">
+    <!-- fontawsome -->
+    <link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Lora&family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
+    <!-- sanitize -->
+    <link rel="stylesheet" href="./css/sanitize.css">
+    <!-- slickのcss-->
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <!-- validationEngineのcss -->
+    <link rel="stylesheet" href="./css/validationEngine.jquery.css">
+    <!-- 自作のcss -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- jquery-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validationEngine-ja.js"></script>
+    <script src="js/jquery.validationEngine.min.js"></script>
+</head>
+<body id="company">
+    <header class="header">
+        <div class="header_container wrapper">
+            <h1 class="logo"><a href="./index.html"><img src="./img/logo.svg" alt=""></a></h1>
+            <nav class="main_nav">
+                <ul>
+                    <li><a href="./about.html">about us</a></li>
+                    <li><a href="./item.html">item</a></li>
+                    <li><a href="#">service</a></li>
+                    <li><a href="./access.html">access</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="wrapper main_content">
+        <h1 class="title"><span>contact</span></h1>
+        <form id="mail_form" method="get" action="#">
+            <table>
+                <tbody>
+                    <tr>
+                        <th>お問い合わせ内容</th>
+                        <td>
+                            <select name="messageType" class="validate[required]">
+                                <option value="">選択してください</option>
+                                <option value="商品について">商品について</option>
+                                <option value="その他">その他</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>お名前</th>
+                        <td><input type="text" name="userName" class="validate[required]"></td>
+                    </tr>
+                    <tr>
+                        <th>フリガナ</th>
+                        <td><input type="text" name="rubi" class="validate[required,custom[katakana]]"></td>
+                    </tr>
+                    <tr>
+                        <th>電話番号</th>
+                        <td><input type="tel" name="phoneNumber" maxlength="11" class="validate[required,custom[phone]]"></td>
+                    </tr>
+                    <tr>
+                        <th>メールアドレス</th>
+                        <td><input type="email" class="validate[required,custom[email]]"></td>
+                    </tr>
+                    <tr>
+                        <th>自由入力欄</th>
+                        <td>
+                            <textarea name="message" class="validate[required]"></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="form_btn">
+                <button type="submit" class="confirm_btn">入力確認画面へ進む</button>
+            </div>
+        </form>
+    </div>
+    
+    <footer class="footer">
+        <!--フッターに配置する左右の画像-->
+        <div class="f_img_left"><img src="./img/f_image.png" alt=""></div>
+        <div class="f_img_right"><img src="./img/f_image.png" alt=""></div>
+        <div class="f_container wrapper">
+            <div class="logo"><a href="./index.html"><img src="./img/logo.svg" alt=""></a></div>
+            
+            <ul class="f_content cf">
+                <li><a href="#">プライバシーポリシー</a></li>
+                <li><a href="./company.html">company</a></li>
+                <li><a href="./contact.html">contact</a></li>
+                <li><a href="#">特定商取引法に基づく表記</a></li>
+            </ul>
+            
+            <div class="f_bottom">
+                <p class="f_copy">&copy; Copyright lab.ikebukuro ,inc</p>
+                <ul class="sns_icons cf">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>                    
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- jqueryの設定 -->
+    <script src="./js/common.js"></script>
+</body>
+</html>
